@@ -2,7 +2,7 @@
 Repository for microservice with Golang and mySQL
 
 ## Despliegue de la Base de Datos
-Para desplegar la base de datos, sigue estos pasos:
+Para desplegar la base de datos, sigue estos pasos desde la carpeta db_dockerfile:
 
 1. **Construye la imagen de MySQL:**
 
