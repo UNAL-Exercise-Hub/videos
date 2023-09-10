@@ -1,8 +1,6 @@
-module videos_ms
+module github.com/jbautistas/videos_ms
 
 go 1.18
-
-replace videos_ms/routes => ./routes
 
 require github.com/gin-gonic/gin v1.9.1
 

@@ -1,10 +1,7 @@
 package main
 
-import (
-    "fmt"
-    "videos_ms/routes"
-)
+import "github.com/jbautistas/videos_ms/routes"
 
 func main() {
-	routes.start()
+	routes.Start()
 }
