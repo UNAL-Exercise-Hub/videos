@@ -20,3 +20,19 @@ Para desplegar la base de datos, sigue estos pasos desde la carpeta db_dockerfil
     docker run --name db_client_videos -d --link mysql_videos_db:db -p 8081:80 phpmyadmin
     
 El contenedor MySQL estará en funcionamiento, y si lo deseas, puedes usar phpMyAdmin en http://localhost:8081 para gestionar la base de datos.
+
+## Despliegue de microservicio
+Para desplegar el microservicio, sigue estos pasos desde la carpeta principal:
+
+1. **Construye la imagen del ms:**
+
+   ```bash
+   docker build -t golang_videos_ms .
+
+2. **Ejecuta el contenedor del ms:**
+
+   ```bash
+   docker run -d --name golang_videos_ms --network="host" golang_videos_ms
+
+
+Ahora podras usar la aplicación desde la terminal del contenedor
