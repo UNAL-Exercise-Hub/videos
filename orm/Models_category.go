@@ -77,7 +77,7 @@ func default_cat() {
 		{Nombre: "Principiante-Intermedio", Descripcion: "Tiempo superior a 6 meses e inferior a 9 meses."},
 		{Nombre: "Intermedio", Descripcion: "Tiempo superior a 9 meses e inferior a 1 año y 6 meses."},
 		{Nombre: "Intermedio-Avanzado", Descripcion: "Tiempo superior a 1 año y 6 meses e inferior a 1 año y 9 meses"},
-		{Nombre: "Dificil", Descripcion: "Tiempo superior a 1 año y 9 meses"},
+		{Nombre: "Avanzado", Descripcion: "Tiempo superior a 1 año y 9 meses"},
 	}
 
 	equipamento := []*Equipamento{
