@@ -1,4 +1,4 @@
-module github.com/jbautistas/videos_ms
+module github.com/UNWorkout/Videos
 
 go 1.18
 

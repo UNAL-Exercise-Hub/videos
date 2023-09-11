@@ -1,8 +1,8 @@
 package routes
 
 import (
+	"github.com/UNWorkout/Videos/controller"
 	"github.com/gin-gonic/gin"
-	"github.com/jbautistas/videos_ms/controller"
 )
 
 func Start() {

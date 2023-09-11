@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"net/http"
 
+	"github.com/UNWorkout/Videos/orm"
 	"github.com/gin-gonic/gin"
-	"github.com/jbautistas/videos_ms/orm"
 )
 
 // Get all videos

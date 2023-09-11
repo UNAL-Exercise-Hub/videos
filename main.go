@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/jbautistas/videos_ms/orm"
-	"github.com/jbautistas/videos_ms/routes"
+	"github.com/UNWorkout/Videos/orm"
+	"github.com/UNWorkout/Videos/routes"
 )
 
 func main() {

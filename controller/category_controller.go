@@ -3,8 +3,8 @@ package controller
 import (
 	"net/http"
 
+	"github.com/UNWorkout/Videos/orm"
 	"github.com/gin-gonic/gin"
-	"github.com/jbautistas/videos_ms/orm"
 )
 
 func GetMusculos(ctx *gin.Context) {
