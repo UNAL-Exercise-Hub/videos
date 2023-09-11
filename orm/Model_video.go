@@ -16,3 +16,17 @@ type Video struct {
 	Equipamento []*Equipamento `gorm:"many2many:rel_equipamento;"`
 	Disciplina  []*Disciplina  `gorm:"many2many:rel_disciplina;"`
 }
+
+type CreateParamsVideo struct {
+	Titulo      string
+	Link        string
+	Imagen      string
+	Duracion    int
+	Series      int
+	Musculos    []int
+	Grupo       []int
+	Objetivo    []int
+	Dificultad  []int
+	Equipamento []int
+	Disciplina  []int
+}
