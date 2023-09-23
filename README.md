@@ -32,7 +32,7 @@ Para desplegar el microservicio, sigue estos pasos desde la carpeta principal:
 2. **Ejecuta el contenedor del ms:**
 
    ```bash
-   docker run -d --name golang_videos_ms --network="host" golang_videos_ms
+   docker run -d -p 8080:8080 --name golang_videos_ms golang_videos_ms
 
 
 Ahora podras usar la aplicación desde la terminal del contenedor

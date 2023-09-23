@@ -28,5 +28,5 @@ func Start() {
 		category.GET("/disciplina", controller.GetDisciplina)
 	}
 
-	router.Run("localhost:8080") // listen and serve on 0.0.0.0:8080 (for windows "localhost:8080")
+	router.Run("0.0.0.0:8080") // listen and serve on 0.0.0.0:8080 (for windows "localhost:8080")
 }
