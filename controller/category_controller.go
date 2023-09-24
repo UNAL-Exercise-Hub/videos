@@ -18,8 +18,8 @@ func GetMusculos(ctx *gin.Context) {
 			})
 		} else {
 			ctx.JSON(http.StatusOK, gin.H{
-				"message": "Musculos encontrados",
-				"videos":  musculos,
+				"message":  "Musculos encontrados",
+				"musculos": musculos,
 			})
 		}
 	} else {
@@ -41,7 +41,7 @@ func GetGrupoMuscular(ctx *gin.Context) {
 		} else {
 			ctx.JSON(http.StatusOK, gin.H{
 				"message": "Grupos musculares encontrados",
-				"videos":  grupos,
+				"grupos":  grupos,
 			})
 		}
 	} else {
@@ -62,8 +62,8 @@ func GetObjetivos(ctx *gin.Context) {
 			})
 		} else {
 			ctx.JSON(http.StatusOK, gin.H{
-				"message": "Objetivos encontrados",
-				"videos":  objetivos,
+				"message":   "Objetivos encontrados",
+				"objetivos": objetivos,
 			})
 		}
 	} else {
@@ -84,8 +84,8 @@ func GetDificultad(ctx *gin.Context) {
 			})
 		} else {
 			ctx.JSON(http.StatusOK, gin.H{
-				"message": "Dificultades encontradas",
-				"videos":  dificultades,
+				"message":      "Dificultades encontradas",
+				"dificultades": dificultades,
 			})
 		}
 	} else {
@@ -106,8 +106,8 @@ func GetEquipamento(ctx *gin.Context) {
 			})
 		} else {
 			ctx.JSON(http.StatusOK, gin.H{
-				"message": "Equipamentos encontrados",
-				"videos":  equipamentos,
+				"message":      "Equipamentos encontrados",
+				"equipamentos": equipamentos,
 			})
 		}
 	} else {
@@ -128,8 +128,8 @@ func GetDisciplina(ctx *gin.Context) {
 			})
 		} else {
 			ctx.JSON(http.StatusOK, gin.H{
-				"message": "Disciplinas encontradas",
-				"videos":  disciplina,
+				"message":    "Disciplinas encontradas",
+				"disciplina": disciplina,
 			})
 		}
 	} else {
