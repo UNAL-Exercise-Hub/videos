@@ -116,7 +116,10 @@ func PostVideo(ctx *gin.Context) {
 		newVideo.Disciplina = disciplinas
 	}
 	db.Create(&newVideo)
-	ctx.IndentedJSON(http.StatusCreated, newVideo)
+	ctx.JSON(http.StatusOK, gin.H{
+		"message": "Video creado correctamente",
+		"video":   newVideo,
+	})
 }
 
 // Get all videos
@@ -132,7 +135,7 @@ func GetVideoID(ctx *gin.Context) {
 			"videos":  video,
 		})
 	} else {
-		ctx.JSON(http.StatusBadRequest, gin.H{
+		ctx.JSON(http.StatusOK, gin.H{
 			"message": "Video no encontrado con id:" + id,
 		})
 	}
@@ -230,7 +233,7 @@ func UpdateVideo(ctx *gin.Context) {
 			"videos":  video,
 		})
 	} else {
-		ctx.JSON(http.StatusBadRequest, gin.H{
+		ctx.JSON(http.StatusOK, gin.H{
 			"message": "Video no encontrado con id:" + id,
 		})
 	}
@@ -249,7 +252,7 @@ func DeleteVideo(ctx *gin.Context) {
 			"videos":  video,
 		})
 	} else {
-		ctx.JSON(http.StatusBadRequest, gin.H{
+		ctx.JSON(http.StatusOK, gin.H{
 			"message": "Video no encontrado con id:" + id,
 		})
 	}
