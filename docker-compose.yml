@@ -1,0 +1,21 @@
+version: "3.4"
+
+services:
+  mysql_videos_db:
+    build:
+      context: ./db_dockerfile
+      dockerfile: Dockerfile
+    container_name: mysql_videos_db
+    env_file: .env
+    ports:
+      - "3306:3306"
+  golang_videos_ms:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: golang_videos_ms
+    env_file: .env
+    volumes:
+      - .:/code
+    ports:
+      - "8080:8080"
