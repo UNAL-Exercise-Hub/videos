@@ -12,7 +12,7 @@ var err error
 
 // Connect the orm with the database
 func Connection() {
-	dsn := "unworkout:unworkout@tcp(10.63.0.163:3307)/videos_db?charset=utf8mb4&parseTime=True&loc=Local"
+	dsn := "unworkout:unworkout@tcp(34.118.233.18:3307)/videos_db?charset=utf8mb4&parseTime=True&loc=Local"
 	db, err = gorm.Open(mysql.Open(dsn), &gorm.Config{})
 	if err != nil {
 		panic("Failed to connect database\nPlease follow instructions in https://github.com/UNWorkout/Videos")
